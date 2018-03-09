@@ -23,19 +23,8 @@
     <script src="docs/js/vuex.3.0.1.js"></script>
     <script src="docs/js/almond.js"></script>
     <script src="dist/powercalculator.js"></script>
-    <script>
-        // flag to debug
-        Vue.config.devtools = true;
+    <script type="module" src="docs/js/modules/index.js"></script>
 
-        let { powerCalculator, store } = require('powercalculator');
-
-        const storeInstance = new Vuex.Store(store)
-
-        new Vue(Object.assign({
-            store: storeInstance,
-            el: '.power-calculator',
-        }, powerCalculator));
-    </script>
 
 </body>
 </html>
